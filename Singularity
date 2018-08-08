@@ -29,6 +29,6 @@ Version v1.0
     export USER MKLROOT MANPATH VIM_ROOT NETCDF_CXX4_ROOT INTEL_LICENSE_FILE NETCDF_C_ROOT LIBRARY_PATH MIC_LD_LIBRARY_PATH USER LD_LIBRARY_PATH MIC_LIBRARY_PATH CPATH NETCDF_CXX_ROOT NETCDF_FORTRAN_ROOT NETCDF_ROOT PATH
 
 %post
-    apt-get update
-    apt-get -y install libx11-dev libxt-dev libxext-dev libxft-dev libxtst-dev libmotif-dev
+    yum update
+    yum -y groupinstall "X Window System" 
     ulimit -s unlimited
