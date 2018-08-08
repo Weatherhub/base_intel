@@ -31,4 +31,5 @@ Version v1.0
 %post
     yum update
     yum -y groupinstall "X Window System" 
+    yum -y install openmotif-devel
     ulimit -s unlimited
